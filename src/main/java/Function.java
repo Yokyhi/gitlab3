@@ -14,7 +14,7 @@ public class Function {
         return y;
     }
 
-    public static int getX() {
+    public static double getX() {
         return x;
     }
 }
