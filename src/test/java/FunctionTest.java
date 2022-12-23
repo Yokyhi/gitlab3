@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
 class FunctionTest {
 Function function;
@@ -22,5 +23,10 @@ Function function;
     public void XCheck(){
         boolean check = Function.getX() < 0;
         assertEquals(false, check);
+    }
+    @org.junit.jupiter.api.Test
+    public void xLess(){
+        boolean check = Function.getX() < 2147483647;
+        assertEquals(true, check);
     }
 }
